@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D O K I - Maquillaje</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+.main-header {
+    background-color: #3e324d; 
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+    position: relative; 
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #7542a5;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a483b9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden; 
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: normal;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.main-container h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #555;
+    font-size: 2em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px; 
+    padding: 30px 0;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); 
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain; 
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.3em;
+    margin: 10px 0;
+    color: #444;
+}
+
+.product-card .price {
+    font-size: 1.4em;
+    color: #821cd4; 
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: #8054aa; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #5e199e; 
+}
+
+
+.main-footer {
+    background-color: #3e324d;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+</style>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1>⋆♡˚⟡˖ D O K I ˖⟡˚♡⋆</h1>
+            <nav class="main-nav">
+                 <ul>
+                    <li><a href="index.html" class="active">TODOS</a></li>
+                    <li class="dropdown">
+                        <a href="skincare.html">SKINCARE ♡</a>
+                        <div class="dropdown-content">
+                            <a href="skincare.html#centella">CENTELLA</a>
+                            <a href="skincare.html#tocobo">TOCOBO</a>
+                            </div>
+                    </li>
+                     <li class="dropdown">
+                        <a href="maquillaje.html" class="active">MAQUILLAJE ♡</a>
+                        <div class="dropdown-content">
+                            <a href="#romand">ROMAND</a>
+                            <a href="#flower knows">FLOWER KNOWS</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="accesorios.html">ACCESORIOS ♡</a>
+                        <div class="dropdown-content">
+                            <a href="accesorios.html#brochas">COLLARES</a>
+                            <a href="accesorios.html#organizadores">ANILLOS</a>
+                            </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Productos de Maquillaje</h2>
+        
+        <section id="Romand">
+            <h3>Romand</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="Juicy Lasting Tint Ripe Fruits Series.webp" alt="Juicy Lasting Tint Ripe Fruits Series">
+                    <h3>Juicy Lasting Tint Ripe Fruits Series</h3>
+                    <p class="price">s/70.00</p>
+                    <button>Ver Detalles</button>
+                </div>
+                <div class="product-card">
+                    <img src="Better Than Palette Secret Garden.webp" alt="Better Than Palette Secret Garden">
+                    <h3>Better Than Palette Secret Garden</h3>
+                    <p class="price">s/120.00</p>
+                    <button>Ver Detalles</button>
+                </div>
+                </div>
+        </section>
+
+        <section id="Flower knows">
+            <h3>Flower knows</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="Strawberry Cupid Cake Lip Cream.webp" alt="Strawberry Cupid Cake Lip Cream">
+                    <h3>Strawberry Cupid Cake Lip Cream</h3>
+                    <p class="price">s/90.00</p>
+                    <button>Ver Detalles</button>
+                </div>
+                <div class="product-card">
+                    <img src="Swan Ballet Embossed Blush.webp" alt="Swan Ballet Embossed Blush">
+                    <h3>Swan Ballet Embossed Blush</h3>
+                    <p class="price">s/90.00</p>
+                    <button>Ver Detalles</button>
+                </div>
+                </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Mi Tienda de Belleza. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
